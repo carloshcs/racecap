@@ -1,0 +1,4 @@
+run to create procfile -> echo "web: streamlit run app.py --server.port=\$PORT --server.enableCORS=false" > Procfile
+
+
+check if it workws type Procfile
