@@ -1,0 +1,6 @@
+plotly
+pandas
+requests
+openpyxl
+streamlit
+time
