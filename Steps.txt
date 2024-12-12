@@ -2,3 +2,42 @@ run to create procfile -> echo "web: streamlit run app.py --server.port=\$PORT -
 
 
 check if it workws type Procfile
+
+git init
+git remote add origin https://github.com/carloshcs/race-cap5.git
+
+
+git remote -v
+
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+
+git push -u origin main --force
+
+
+
+---------------
+
+heroku git:remote -a race-cap
+
+
+
+
+Steps 
+git init
+git remote add origin https://github.com/carloshcs/race-cap5.git
+git remote -v
+git add .
+git commit -m "Prepare files for Heroku deployment"
+git branch -M main
+git push -u origin main --force
+
+
+Steps heroku
+heroku login
+heroku git:remote -a race-cap
+git push heroku main
+heroku open
+
+

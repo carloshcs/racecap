@@ -1,8 +1,15 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Dec 11 19:42:22 2024
+
+@author: carlo
+"""
+
+
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 from datetime import datetime, timedelta
-import os
 
 # Set up Streamlit page configuration with an icon
 st.set_page_config(
@@ -132,8 +139,3 @@ If you like the content, you can help by donating any amount (e.g., $0.01) to im
 - **Ethereum:** `0x14effaF60778faBF31Ae3D69BD27a520c1dD8bb8`
 - **Base:** `0x14effaF60778faBF31Ae3D69BD27a520c1dD8bb8`
 """)
-
-# Bind to Heroku's dynamic port
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8501))
-    st._set_option("server.port", port)
