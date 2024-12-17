@@ -26,7 +26,7 @@ heroku git:remote -a race-cap
 
 Steps 
 git init
-git remote add origin https://github.com/carloshcs/race-cap5.git
+git remote add origin https://github.com/carloshcs/race-cap6.git
 git remote -v
 git add .
 git commit -m "Prepare files for Heroku deployment"
@@ -37,7 +37,8 @@ git push -u origin main --force
 Steps heroku
 heroku login
 heroku git:remote -a race-cap
-git push heroku main
+git push heroku main --force
+
 heroku open
 
 
